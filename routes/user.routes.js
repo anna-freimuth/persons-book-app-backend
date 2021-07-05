@@ -4,9 +4,9 @@ module.exports = app => {
 
     const router = require("express").Router()
 
-    router.get("/",[authJwt.verifyToken], users.findAll)
+    router.get("/",users.findAll)
 
-    router.get("/:id",[authJwt.verifyToken], users.findOne)
+    router.get("/:id", users.findOne)
 
     router.put("/:id",[authJwt.verifyToken], users.update)
 
