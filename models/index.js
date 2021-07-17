@@ -24,5 +24,8 @@ db.Sequelize = Sequelize
 db.sequelize = sequelize
 
 db.users = require("./user.model")(sequelize, Sequelize)
+db.albums = require("./album.model")(sequelize, Sequelize);
+db.photos = require("./photo.model")(sequelize, Sequelize);
+db.posts = require("./post.model")(sequelize, Sequelize);
 
 module.exports = db
