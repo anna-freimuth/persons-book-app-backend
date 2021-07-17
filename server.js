@@ -18,6 +18,9 @@ app.use(express.urlencoded({extended: true}));
 db.sequelize.sync();
 authRoutes(app);
 require("./routes/user.routes")(app);
+require("./routes/post.routes")(app);
+require("./routes/album.routes")(app);
+require("./routes/photo.routes")(app);
 
 app.get("/", (req, res) => {
     res.json({message: "Hello"});
