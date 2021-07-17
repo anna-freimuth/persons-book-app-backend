@@ -1,1 +1,1 @@
-Backend for personal profile app.
+Backend for persons book app.
